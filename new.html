@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare Hospital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #407756;
+            color: white;
+            padding: 20px;
+        }
+
+        nav .logo h1 {
+            font-family: 'Abril Fatface', serif;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .mainText h1 {
+            font-size: 3rem;
+            color: #407756;
+        }
+
+        .main img {
+            width: 300px;
+        }
+
+        .head {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .teams, .speciality, .reviews, .pathology {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card, .spCard {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover, .spCard:hover {
+            transform: scale(1.05);
+        }
+
+        .card img, .spCard img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact input, .contact button {
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #407756;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .detail {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .content img {
+            width: 200px;
+        }
+
+        .content {
+            background: #ffffff;
+            color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #closeBtn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>LIT HOSPITAL</h1>
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#doctor">DOCTORS</a></li>
+            <li><a href="#speciality">SPECIALITIES</a></li>
+            <li><a href="#BLOOD GROUP TESTING">BLOOD GROUP TESTING</a></li>
+            <li><a href="#HOSPITAL REPORT ">REPORT </a></li>
+            <li><a href="#patient">PATIENT REVIEWS</a></li>
+            <li><a href="#FACILITIES">FACILITIES</a></li>            
+            <li><a href="#pathology">PATHOLOGY</a></li>
+            <li><a href="#Markup Appointment">APPOINTMENT</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="mainText">
+            <h1>The LIT HOSPITAL that <br> Cares for You</h1>
+            <h3>Best Teams</h3>
+            <button>Show more</button>
+        </div>
+        <img src="images/mains.png" alt="Mainimage">
+    </div>
+
+    <div id="doctor">
+        <div class="head">
+            <h1>OUR  DOCTORS</h1>
+        </div>
+        <div class="teams">
+            <div class="card">
+                <img src="images/dt1.jpg" alt="Doctor1">
+                <p>Adeeba</p>
+                <p>Top Cardiologist</p>
+            </div>
+            <div class="card">
+                <img src="images/dt2.jpg" alt="">
+                <p>Saachi</p>
+                <p>Neurosurgeon</p>
+            </div>
+            <div class="card">
+                <img src="images/dt3.jpg" alt="">
+                <p>Prakash</p>
+                <p>Orthopedic</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .aa1{
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
+    <div id="speciality">
+      <div class="head">
+          <h1>OUR SPECIALISTS</h1>
+      </div>
+      <div class="speciality">
+          <div class="spCard">
+              <img src="images/s1.png" alt="">
+              <p class="aa1">Knee Replacement Surgery</p>
+              <p>Specialized knee surgery to treat injuries, arthritis, and joint conditions. We ensure advanced care with expert surgeons and state-of-the-art facilities.</p>
+
+          </div>
+          <div class="spCard">
+              <img src="images/s2.png" alt="">
+              <p class="aa1">ACL Reconstruction</p>
+              <p>Restore mobility and eliminate pain with our world-class knee surgery solutions. Our dedicated surgeons offer personalized care for every patient.</p>
+
+          </div>
+          <div class="spCard">
+              <img src="images/s3.png" alt="">
+              <p class="aa1">Knee Injury Rehabilitation</p>
+              <p>Advanced surgical techniques for knee repair, replacement, and rehabilitation. Trust our experts to bring you back to an active life.</p>
+
+          </div>
+      </div>
+    </div>
+    <div id="BLOOD GROUP TESTING">
+        <div class="head">
+            <h1>BLOOD GROUP TESTING  </h1>
+            <p> </p>
+        
+        <div class="BlOOD TESTING">
+            <div class="BLOOD  TESTING">    </header>
+<main>
+    <section>
+        <h2>What is your blood type?</h2>
+        <p></p>
+        <form>
+            <label for="blood-type">Select your blood type:</label>
+            <select id="blood-type" name="blood-type">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <button>Submit</button>
+        </form>
+    </section>
+    <section>
+        <h2>Blood Group Information</h2>
+        <p>Blood groups are classified based on the presence or absence of specific antigens on the surface of red blood cells.</p>
+        <ul>
+            <li><strong>A+</strong>: Has A antigen on red blood cells and Rh antigen on the surface.</li>
+            <li><strong>A-</strong>: Has A antigen on red blood cells but no Rh antigen.</li>
+            <li><strong>B+</strong>: Has B antigen on red blood cells and Rh antigen on the surface.</li>
+            <li><strong>B-</strong>: Has B antigen on red blood cells but no Rh antigen.</li>
+            <li><strong>AB+</strong>: Has both A and B antigens on red blood cells and Rh antigen on the surface.</li>
+            <li><strong>AB-</strong>: Has both A and B antigens on red blood cells but no Rh antigen.</li>
+            <li><strong>O+</strong>: Has no A or B antigens on red blood cells but has Rh antigen on the surface.</li>
+            <li><strong>O-</strong>: Has no A or B antigens on red blood cells and no Rh antigen.</li>
+        </ul>
+    
+   </div>
+  </div>
+</div>
+
+<div id="HOSPITAL REPORT">
+    <div class="head">
+        <h1>HOSPITAL  REPORT </h1>
+        <p> </p>
+
+</header>
+<main>
+<section>
+    <h2>PATIENT INFORMATION</h2>
+    <form>
+        <label for="patient-name">Patient Name:</label>
+        <input type="text" id="patient-name" name="patient-name"><br><br>
+        <label for="patient-id">Patient ID:</label>
+        <input type="text" id="patient-id" name="patient-id"><br><br>
+        <label for="date-of-birth">Date of Birth:</label>
+        <input type="date" id="date-of-birth" name="date-of-birth"><br><br>
+    </form>
+</section>
+<section>
+    <h2>MEDICAL REPORT</h2>
+    <form>
+        <label for="chief-complaint">Chief Complaint:</label>
+        <textarea id="chief-complaint" name="chief-complaint"></textarea><br><br>
+        <label for="medical-history">Medical History:</label>
+        <textarea id="medical-history" name="medical-history"></textarea><br><br>
+        <label for="diagnosis">Diagnosis:</label>
+        <textarea id="diagnosis" name="diagnosis"></textarea><br><br>
+        <label for="treatment">Treatment:</label>
+        <textarea id="treatment" name="treatment"></textarea><br><br>
+    </form>
+</section>
+<section>
+    <h2>LAB RESULTS</h2>
+    <form>
+        <label for="lab-test">Lab Test:</label>
+        <input type="text" id="lab-test" name="lab-test"><br><br>
+        <label for="result">Result:</label>
+        <input type="text" id="result" name="result"><br><br>
+</div>
+
+<style>
+    .reviews{
+        align-items: center;
+    }
+</style>
+
+
+</div>
+</div>
+    <div id="patient">
+        <div class="head">
+            <h1>PATIENT REVIEWS</h1>
+        </div>
+        <div class="reviews">
+            <div class="patientReview">
+                <img src="images/p1.png" alt="">
+                <img src="images/p2.png" alt="">
+
+            </div>
+            <div class="patientReview">
+                <img src="images/p3.jpg" alt="">
+                <img src="images/p4.jpg" alt="">
+
+            </div>
+              <div class="patientReview">
+                <img src="images/p5.jpg" alt="">
+                <img src="images/p6.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .FACILITIES{
+            text-align: center;
+        }
+    </style>
+
+
+    <div id="HOSPITAL FACILITIES">
+        <div class="head">
+            <h1>FACILITIES IN OUR HOSPITAL </h1>
+            <p> </p>
+            <p> </p>
+        </div>
+        <div class=" FACILITIES">
+            <div class="FACILITIES">
+                <img src="images/z3.jpg" alt="">
+                <img src="images/m6.jpg" alt="">
+                <p> </p>
+                <img src="images/z2.jpg" alt="">
+                <p> </p>
+                <img src="images/z4.jpg" alt="">   
+                <img src="images/z5.jpg" alt="">                 
+
+
+
+            </div>
+        </div>
+    </div>    
+
+    <style>
+        .bloodsample{
+            text-align: center;
+        }
+    </style>
+
+    <div id="Pathology">
+        <div class="head">
+            <h1>PATHOLOGY BLOOD SAMPLE</h1>
+        </div>
+        <div class=" Bloodsample">
+            <div class="bloodsample">
+                <img src="images/a1.jpg" alt="">
+                <img src="images/a2.jpg" alt="">
+                <img src="images/y3.jpg" alt="">
+                <img src="images/y4.jpg" alt="">
+                <img src="images/aa1.jpg" alt="">
+                <img src="images/y6.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .Appointment{
+            text-align: center;
+        }
+    </style>
+    <div id="Markup Appointment">
+        <div class="head">
+            <h1>APPOINTMENT</h1>
+        </div>
+        <div class="Appointment">
+            <input type="text" placeholder="Enter Name" id="Name">
+            <p>                       </p>
+            <p>                       </p>
+            <input type="Age" placeholder="Enter Age" id="Age">
+            <p>                       </p>
+            <p>                       </p>
+            <input type="Disease" placeholder="Enter Disease" id="Disease"/>
+            <p> </p>
+            <p> </p>
+            <button id="connectBtn">Connect</button>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="contact">
+            <h1>CONNECT WITH US</h1>
+            <input type="text" placeholder="Enter Email" id="email">
+            <input type="password" placeholder="Enter Password" id="pass">
+            <button id="connectBtn">Connect</button>
+        </div>
+    </div>
+   
+    <div class="detail">
+        <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="content"></div>
+    </div>
+
+    <script>
+        let card = document.querySelectorAll(".card");
+        let closeBtn = document.getElementById("closeBtn");
+
+        card.forEach((cards) => {
+            cards.addEventListener("click", () => {
+                document.querySelector(".detail").style.display = "flex";
+                document.querySelector(".content").innerHTML = `
+                    <img src="${cards.firstElementChild.src}" alt="">
+                    <h1>${cards.querySelector("p").innerText}</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                `;
+            });
+        });
+
+        closeBtn.addEventListener("click", () => {
+            document.querySelector(".detail").style.display = "none";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+new/
+│-- index.html           
+│-- style.css            
+│-- script.js            
+└── images/              
+    │-- mains.png        <-- Mainimage
+    │-- dt1.jpg          <-- Doctor1 image
+    │-- dt2.jpg          <-- Doctor 2 image
+    │-- dt3.jpg          <-- Doctor 3 image
+    │-- s1.png           <-- Speciality 1 image
+    │-- s2.png           <-- Speciality 2 image
+    │-- p1.png           <-- Patient Review 1
+    │-- p2.png           <-- Patient Review 2
+    |-- z1.jpg
+    |-- z2.jpg
+    |-- z3.jpg
+    |-- z4.jpg
+    |-- z5.jpg
+    
